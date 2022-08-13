@@ -4,7 +4,6 @@ var botonEncriptar = document.getElementById("encriptar");
 var contenidoAntes = document.getElementById("antes_container");
 var contenidoDespues = document.getElementById("despues_container");
 var botonCopiar = document.getElementById("copiar");
-var campoCopiar = document.getElementById("campoCopiar");
 
 function borrar(){
     contenidoAntes.style.display = "none";
@@ -37,11 +36,9 @@ function mostrarEncript() {
     if (contenidoEncript != "") {
         borrar();
         textoFinalEncript.textContent = resultadoEncript;
-        campoCopiar.value = resultadoEncript;
     } else {
         alert("Ingrese texto");
     }
-    console.log(campoCopiar.value);
 }
 
 botonEncriptar.onclick = mostrarEncript;

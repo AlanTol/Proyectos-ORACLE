@@ -4,7 +4,6 @@ var botonDesencriptar = document.getElementById("desencriptar");
 var contenidoAntes = document.getElementById("antes_container");
 var contenidoDespues = document.getElementById("despues_container");
 var botonCopiar = document.getElementById("copiar");
-var campoCopiar = document.getElementById("campoCopiar");
 var paso = true;
 
 function borrar(){
@@ -84,11 +83,9 @@ function mostrar() {
     if (contenido != "") {
         borrar();
         textoFinal.textContent = resultado;
-        campoCopiar.value = resultado;
     } else {
         alert("Ingrese texto");
     }
-    console.log(campoCopiar.value);
 }
 
 botonDesencriptar.onclick = mostrar;
