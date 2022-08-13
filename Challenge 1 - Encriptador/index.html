@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="logo_container">
+            <img src="imagenes/Vectormobile_logo.png" alt="logo" class="logo">
+        </div>
+        <section class="entrada">
+            <div class="texto centrado">
+                <textarea id="entry" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="opciones centrado">
+                <div class="advertencia">
+                    <img src="imagenes/Vectoradvertiment_logo.png" alt=" simbolo de advertencia">
+                    <span>Solo letras minúsculas y sin acentos</span>
+                </div>
+                <div class="botones">
+                    <button id="encriptar" class="encriptar">Encriptar</button>
+                    <button id="desencriptar" class="desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section class="salida">
+            <div class="resultado centrado">
+                <div id="antes_container" class="antes_container">
+                    <div class="muneco_container">
+                        <img src="imagenes/Muñecomuneco.png" alt="Un muñeco con lupa">
+                    </div>
+                    <p id="titulo_resultado">Ningún mensaje fue encontrado</p>
+                    <p id="mensaje_resultado">Ingrese el texto que desee encriptar o desencriptar</p>
+                </div>
+                <div id="despues_container" class="despues_container">
+                    <p id="texto_encriptado"></p>
+                </div>
+                <input id="campoCopiar"></input>
+                <button id="copiar" class="desencriptar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/encriptar.js"></script>
+    <script src="scripts/desencriptar.js"></script>
+    <script src="scripts/borrar.js"></script>
+</body>
+</html>
