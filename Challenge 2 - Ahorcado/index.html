@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ahorcado</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="logo">
+    </header>
+    <div class="pantalla-inicio">
+        <button class="iniciar boton1 boton">Iniciar juego</button>
+        <button class="agregar boton2 boton">Agregar nueva palabra</button>
+    </div>
+    <div class=" active crear-palabra">
+        <textarea maxlength="8" id="palabra-agregar" class="palabra-agregar" placeholder="Ingrese una palabra"></textarea>
+        <div class="advertencia">
+            <img src="imagenes/advertencia_logo.png" alt="Simbolo de advertencia">
+            <span>Máx. de 8 letras</span>
+        </div>
+        <div class="opciones">
+            <button class="guardar boton3 boton">Guardar y empezar</button>
+            <button class="cancelar boton4 boton">Cancelar</button>
+        </div>
+    </div>
+    <div class="active juego">
+        <div class="ahorcado" for="entrada">
+            <div class="base"></div>
+            <div class="palo-vertical">
+                <div class="palo-horizontal"></div>
+                <div class="persona">
+                    <div class="cuerda intento"></div>
+                    <div class="cabeza intento"></div>
+                    <div class="torso intento">
+                        <div class="mano1 intento"></div>
+                        <div class="mano2 intento"></div>
+                        <div class="pata1 intento"></div>
+                        <div class="pata2 intento"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="juego-resultados">
+            <div class="letras">
+                <div class="letra active"><p class="letra-valor"></p><div></div></div>
+                <div class="letra active"><p class="letra-valor"></p><div></div></div>
+                <div class="letra active"><p class="letra-valor"></p><div></div></div>
+                <div class="letra active"><p class="letra-valor"></p><div></div></div>
+                <div class="letra active"><p class="letra-valor"></p><div></div></div>
+                <div class="letra active"><p class="letra-valor"></p><div></div></div>
+                <div class="letra active"><p class="letra-valor"></p><div></div></div>
+                <div class="letra active"><p class="letra-valor"></p><div></div></div>
+            </div>
+            <div class="letras-usadas">
+                
+            </div>
+        </div>
+        <div class="juego-opciones">
+            <button class="nuevo-juego boton3 boton">Nuevo juego</button>
+            <button class="desistir boton4 boton">Desistir</button>
+        </div>
+        <input type="text" id="entrada" name="entrada">
+    </div>
+    <footer>
+
+    </footer>
+    <script src="scripts/inicio.js"></script>
+    <script src="scripts/juego.js"></script>
+    <script src="scripts/guardarPalabra.js"></script>
+</body>
+</html>

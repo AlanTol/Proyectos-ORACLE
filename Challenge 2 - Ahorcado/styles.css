@@ -1,0 +1,382 @@
+body {
+    background-color: #e5e5e5;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Logo */
+header {
+    height: 10vh;
+    width: 100%;
+}
+
+header img {
+    margin: 2%;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 8vh;
+    background-color: #0A3871;
+}
+/* Pantalla de inicio */
+.pantalla-inicio {
+    height: 82vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.boton {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    border: none;
+}
+.boton1 {
+    max-width: 317px;
+    height: 105px;
+    width: 85%;
+}
+
+.boton2 {
+    color: #0A3871;
+    height: 67px;
+    width: 68%;
+    max-width: 280px;
+    background-color: transparent;
+    border: 1px solid #0A3871;
+}
+
+/* Pantalla de agregar palabra */
+
+.crear-palabra {
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+}
+
+.palabra-agregar {
+    width: 90%;
+    height: 55%;
+    background: transparent;
+    color: #0A3871;
+    outline: 0;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    text-transform: uppercase;
+    border: none;
+    resize: none;
+}
+
+.palabra-agregar::placeholder {
+    color: #0A3871;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    text-transform: none;
+}
+
+.advertencia {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.advertencia span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%
+}
+
+.opciones{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.boton3 {
+    min-width: 100%;
+    height: 67px;
+}
+
+.boton4 {
+    color: #0A3871;
+    min-width: 100%;
+    height: 67px;
+    background-color: transparent;
+    border: 1px solid #0A3871;
+}
+
+/* Pantalla de juego */
+
+
+.juego {
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Muñeco del ahorcado */
+
+.ahorcado {
+    width: 90%;
+    max-width: 450px;
+    height: 40vh;
+    position: relative;
+}
+
+
+.base {
+    height: 5px;
+    width: 100%;
+    background-color: #0A3871;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+
+.palo-vertical {
+    height: 90%;
+    width: 60%;
+    background-color: transparent;
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    border-left: 5px solid #0A3871;
+}
+
+
+.palo-horizontal {
+    height: 5px;
+    width: 60%;
+    position: absolute;
+    background-color: #0A3871;
+
+}
+
+
+.persona {
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+    position: absolute;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.cuerda {
+    height: 10%;
+    width: 5px;
+    background-color: #0A3871;
+}
+
+
+.cabeza {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: 5px solid #0A3871;
+    border-radius: 100%;
+}
+
+
+.torso {
+    height: 40%;
+    width: 5px;
+    background-color: #0A3871;
+    position: relative;
+}
+
+
+.mano1 {
+    height: 5px;
+    width: 60px;
+    background-color: #0a3871;
+    position: absolute;
+    top: 0;
+}
+
+.mano2 {
+    height: 5px;
+    width: 60px;
+    background-color: #0a3871;
+    position: absolute;
+    top: 0;
+    left: -60px;
+}
+
+.pata1 {
+    height: 5px;
+    width: 60px;
+    background-color: #0a3871;
+    position: absolute;
+    bottom: 0;
+}
+
+.pata2 {
+    height: 5px;
+    width: 60px;
+    background-color: #0a3871;
+    position: absolute;
+    bottom: 0;
+    left: -60px;
+}
+
+
+
+/* */
+.juego-resultados {
+    width: 90%;
+    max-width: 436px;
+}
+
+
+.letras {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.letra {
+    max-width: 48px;
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.letra div {
+    height: 4px;
+    width: calc(100% - 7px);
+    background-color: #0A3871;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -25%;
+}
+
+
+.letra p {
+    color: #0A3871;
+    font-size: 24px;
+    margin: 0;
+    text-transform: uppercase;
+    height: 27.6px;
+
+}
+
+
+.letras-usadas {
+    height: 13vh;
+    margin-top: 10px;
+}
+
+
+.juego-opciones {
+    max-width: 700px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Configuración general */
+.active {
+    display: none;
+}
+
+#entrada {
+    position: absolute;
+}
+/* Diseño adaptable */
+
+/* Tablets */
+
+@media screen and (min-width: 500px) {
+    /* Pantalla de crear palabra */
+    .palabra-agregar {
+        padding-top: 40px;
+        height: 70%;
+    }
+
+    .opciones {
+        gap: 4%;
+    }
+    
+    .boton3 {
+        min-width: 48%;
+    }
+    
+    .boton4 {
+        min-width: 48%;
+    }
+
+    /* Pantalla de juego */
+
+    .juego-opciones {
+        gap: 4%;
+    }
+    
+    .letra {
+        max-width: 80px;
+    }
+
+    .letra p {
+        font-size: 48px;
+        height: 56px;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1024px) {
+    .crear-palabra {
+        padding: 0 250px 150px;
+    }
+
+    
+    .letra p {
+        height: 56px;
+    }
+
+    .juego {
+        padding: 0 250px 50px;
+    }
+}

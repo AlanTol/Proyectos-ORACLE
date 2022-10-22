@@ -5,7 +5,7 @@ var textoCopiar = document.getElementById("texto_encriptado");
 
 function copiarAlPortapapeles(){
     let input = document.createElement("input");
-    input.setAttribute("value",textoCopiar.innerText);
+    input.setAttribute("value",textoCopiar.value);
     document.body.appendChild(input);
     input.select();
     document.execCommand("copy");

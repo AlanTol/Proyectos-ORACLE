@@ -1,0 +1,44 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    padding: 0 16px;
+}
+
+.active {
+    display: none;
+}
+
+.icon {
+    font-size: 37px;
+    color: #2A7AE4;
+}
+
+
+.ventana {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .active {
+        display: inline-block;
+    }
+
+    
+    .container {
+        padding: 0 152px;
+    }
+
+
+
+}

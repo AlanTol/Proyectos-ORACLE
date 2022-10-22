@@ -1,0 +1,2 @@
+1) Hacer que el muñequito vaya agreganco partes.
+2) Hacer que el juego se reinicie con los botones "nuevoJuego" y "desistir".

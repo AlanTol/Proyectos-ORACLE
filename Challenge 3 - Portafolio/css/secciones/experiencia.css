@@ -1,0 +1,185 @@
+.experiencia {
+    background-color: #f5f5f5;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experiencia h2 {
+    margin-bottom:16px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #464646;
+}
+
+.experiencia_card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.experiencia_card:not(:last-child) {    
+    margin-bottom: 64px;
+}
+
+.experiencia_card_texto {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px
+}
+
+.experiencia_card_texto h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+
+
+.experiencia_card_texto p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+}
+
+
+.experiencia_card_texto_botones {
+    display: flex;
+    gap: 16px
+}
+
+
+.boton {
+    padding: 12px 16px;
+    width: 120px;
+    height: 40px;
+    background: #2A7AE4;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    transition: all 0.4s;
+}
+
+
+.boton:active {
+    transform: scale(0.97)
+}
+.boton--diferencial {
+    background-color: #f5f5f5;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+}
+
+.experiencia_card_muestra {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.experiencia_card_muestra img {
+    width: 100%;
+}
+
+
+/* Estilo del encriptador */
+
+.experiencia_card_muestra--fondo {
+    height: auto;
+    background-color: #aaa;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.paneles {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.paneles_encriptado input, .paneles_desencriptado input{
+    display: block;
+    margin: 10px 0;
+    height: 35px;
+    padding-left: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.paneles_encriptado button, .paneles_desencriptado button {
+    background-color: blue;
+    color: #FFFFFF;
+    border-radius: 2px;
+    border: none;
+    font-size: 13px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Estilo responsive para Tablets */
+
+@media screen and (min-width:768px) {
+    .experiencia_card_muestra--fondo {
+        height: 360px;
+        justify-content: center;
+    }
+    
+    .experiencia_card_muestra--fondo h3 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 26px;
+    }
+
+    .paneles {
+        flex-direction: row;
+    }
+
+    
+    .paneles_desencriptado p, .paneles_encriptado p {
+        font-size: 18px;
+    }
+
+    .paneles_encriptado input, .paneles_desencriptado input{
+        height: 50px;
+        width: 100%;
+    }
+    
+    .paneles_encriptado button, .paneles_desencriptado button {
+        font-size: 17px;
+    }
+
+}
+
+/* Estilos para escritorios */
+
+@media screen and (min-width: 1024px) {
+    .experiencia_card {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .experiencia_card:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .experiencia_card_muestra {
+        margin-bottom: 0;
+    }
+    
+    .experiencia_card_texto {
+        margin: 0 16px;
+    }
+
+}

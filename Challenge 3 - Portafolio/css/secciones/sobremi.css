@@ -1,0 +1,41 @@
+.sobremi {
+    background-color: #EAF2FD;
+    padding-top: 16px;
+}
+
+.sobremi h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+}
+
+
+.sobremi p {
+    margin: 16px 0;
+    max-width: 750px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+}
+
+.sobremi img {
+    height: 52px;
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width:1024px) {
+    .sobremi {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .sobremi h2 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .sobremi p {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
